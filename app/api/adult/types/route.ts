@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { ADULT_SOURCES } from '@/lib/api/adult-sources';
 
+export const runtime = 'edge';
+
 export const revalidate = 3600; // Cache for 1 hour
 
 interface Category {
